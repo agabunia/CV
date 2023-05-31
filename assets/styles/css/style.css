@@ -31,7 +31,6 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;
     color: #1572A1;
-    font-size: 1.5rem;
     font-weight: normal;
     font-size: 20px;
 }
@@ -84,6 +83,11 @@ td {
     border: 1px solid #66BFBF;
     font-size: 13px;
     box-shadow: none;
+}
+
+th,
+td {
+    padding: 2px 7px;
 }
 
 hr {
@@ -146,7 +150,6 @@ hr {
 
 .footer {
     background-color: #66BFBF;
-    /* height: 40px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,6 +172,7 @@ hr {
     height: 100%;
     width: 100vw;
     background-color: #66BFBF;
+    transition: height 4s;
 }
 
 nav {
@@ -191,4 +195,51 @@ nav a {
 
 .copyright {
     font-size: 0.75rem;
+}
+
+.contact-info {
+    margin: 20px auto 30px;
+}
+
+.contact-list {
+    margin: 20px auto 30px;
+}
+
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 65px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+
+    .top-cloud-div {
+        position: absolute;
+        overflow: none;
+        left: 10%;
+    }
+    
+    .bottom-cloud-div {
+        overflow-x: hidden;
+        position: absolute;
+        max-width: 100%;
+        top: 40%;
+        width: calc(var(--cloud-width));
+    }
+
+    .paragraph {
+        width: 850px;
+    }
+}
+
+@media (min-width: 800px) {
+    .skill-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        gap: 150px;
+    }
 }
