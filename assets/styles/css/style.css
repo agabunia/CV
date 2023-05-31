@@ -128,10 +128,9 @@ hr {
 }
 
 .projectsBtn {
-    border: solid #11cdd4 1px;
+    border: solid linear-gradient(top,  #11cdd4, #11999e) 1px;
     background-image: -webkit-linear-gradient(top,  #11cdd4, #11999e);
     background-image: -moz-linear-gradient(top,  #11cdd4, #11999e);
-    background-image: -ms-linear-gradient(top,  #11cdd4, #11999e);
     background-image: -o-linear-gradient(top,  #11cdd4, #11999e);
     background-image: linear-gradient(to bottom,  #11cdd4, #11999e);
     text-decoration: none;
