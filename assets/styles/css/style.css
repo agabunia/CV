@@ -179,13 +179,17 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 40px;
     padding: 15px;
 }
 
 nav a {
     width: auto;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
 }
 
 .footerlink {
@@ -203,6 +207,37 @@ nav a {
 
 .contact-list {
     margin: 20px auto 30px;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+}
+
+.logo-name {
+    display: none;
+}
+
+
+/* Page 2 */
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.project-description a {
+    display: block;
+    text-decoration: none;
+    color: #5cb8bb;
+    margin: 15px auto;
+}
+
+.project-image {
+    display: none;
+    width: calc(1919px / 5);
+    height: calc(876px / 5);
 }
 
 
@@ -232,6 +267,15 @@ nav a {
     .paragraph {
         width: 850px;
     }
+
+    .nav {
+        gap: 35px
+    }
+
+    .logo-name {
+        display: inline;
+        padding-top: 3px;
+    }
 }
 
 @media (min-width: 800px) {
@@ -242,4 +286,36 @@ nav a {
         justify-content: center;
         gap: 150px;
     }
+
+    /* Page 2 */
+    .project {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 30px auto;
+        gap: 30px;
+    }
+
+    .project-description p {
+        width: 270px;
+    }
+
+    .project-description a {
+        display: block;
+        text-decoration: none;
+        color: #12777a;
+        margin: 15px auto;
+    }
+
+    .project-description a:hover {
+        text-decoration: underline;
+    }
+
+    .project-image {
+        display: inline;
+        width: calc(1919px / 7);
+        height: calc(876px / 7);
+    }
 }
+
+
