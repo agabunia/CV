@@ -7,33 +7,52 @@
     <title>Aleksandre Gabunia</title>
     <link rel="stylesheet" href="./assets/styles/css/style.css">
     <link rel="icon" href="./assets/styles/icons/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="top-cloud-div">
-            <img src="./assets/images/header/cloud.png" class="cloud top">
+        <div class="navbar">
+            <a href="#Container">
+                <img src="./assets/images/logos/pngegg.png" alt="" class="nav-logo">
+            </a>
+            <nav class="nav-menu unvisible" id="nav-menu">
+                <a href="#Introduction" id="menu">Introduction</a>
+                <a href="#Education" id="menu">Education</a>
+                <a href="#Skills" id="menu">Skills</a>
+                <a href="#Projects" id="menu">Projects</a>
+                <a href="#footer" id="menu">Contact</a>
+            </nav>
+            <button class="nav-btn" id="nav-btn"><i class="fa fa-bars fa-2x"></i></button>
         </div>
-        
-        <h1 class="myName">Aleksandre Gabunia</h1>
-        <h2 class="developer">An <span class="proff">Entry Level</span> Front-End Developer</h2>
-        <div class="bottom-cloud-div">
-            <img src="./assets/images/header/cloud.png" class="cloud bottom">
+
+        <div class="container" id="Container">
+            <div class="top-cloud-div">
+                <img src="./assets/images/header/cloud.png" class="cloud top">
+            </div>
+            
+            <h1 class="myName">Aleksandre Gabunia</h1>
+            <h2 class="developer">An <span class="proff">Entry Level</span> Front-End Developer</h2>
+            <div class="bottom-cloud-div">
+                <img src="./assets/images/header/cloud.png" class="cloud bottom">
+            </div>
+            <img src="./assets/images/header/mountain.png" class="mountain">
         </div>
-        <img src="./assets/images/header/mountain.png" class="mountain">
     </header>
 
     <main class="main" id="main">
-        <div class="profile">
+        <div class="profile" id="Introduction">
             <h2>Hello</h2>
             <p class="paragraph">
-                I am a beginner web developer. Currently studying React.JS & React Native 
+                I am a beginner Front-End developer. Currently studying React.JS & React Native 
                 and looking forward to use my knowledge in real life projects,
                 gain additional knowledge and experience and become full-stack web developer.
             </p>
-            <br>
+        </div>
+        <br>
+        <div id="Education">
             <h2>Education</h2>
             <table class="edu">
                 <tr>
@@ -62,10 +81,10 @@
                     <td>High School Degree</td>
                 </tr>
             </table>
-            <br>
         </div>
+            <br>
         <hr>
-        <div class="skills">
+        <div class="skills" id="Skills">
             <h2>My Skills</h2>
             <div class="skill-row">
                 <img src="./assets/images/tools/mark-up.png" class="skill-pic-1">
@@ -91,7 +110,7 @@
             <br>
         </div>
         <hr>
-        <div class="projects">
+        <div class="projects" id="Projects">
             <h2>Projects</h2>
             <p class="project-p">To see the my projects and their repositories click the link below</p>
             <a href="./projects-page.html" class="projectsBtn">Projects</a>

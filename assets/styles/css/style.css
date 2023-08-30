@@ -11,6 +11,7 @@ body {
     color: #40514E;
     text-align: center;
     width: 100%;
+    min-width: 100vw;
     overflow-x: hidden;
     background-color: #eefdfc;
 }
@@ -18,6 +19,62 @@ body {
 .header {
     background-color: #C8F2EF;
     position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #66BFBF;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    min-height: 20px;
+    z-index: 1;
+}
+
+.nav-btn {
+    margin-top: 5px;
+    padding-right: 10px;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-menu {
+    flex-direction: column;
+    justify-items: center;
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+.visible {
+    display: flex;
+}
+
+.unvisible {
+    display: none;
+}
+
+.nav-menu > a {
+    text-decoration: none;
+    color: #EAF6F6;
+    font-weight: bold;
+}
+
+.nav-logo {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.fa-bars {
+    color: #EAF6F6;
+}
+
+.container {
+    margin-top: 5%;
 }
 
 h1 {
@@ -33,6 +90,7 @@ h2 {
     color: #1572A1;
     font-weight: normal;
     font-size: 20px;
+    padding-top: 58px;
 }
 
 h3 {
@@ -41,6 +99,10 @@ h3 {
 
 .proff {
     text-decoration: underline;
+}
+
+.developer {
+    padding-top: 20px;
 }
 
 .cloud {
@@ -71,6 +133,7 @@ h3 {
 
 .paragraph {
     margin: 0 auto;
+    max-width: 95%;
 }
 
 .edu {
@@ -85,6 +148,10 @@ td {
     box-shadow: none;
 }
 
+table {
+    width: 95%;
+}
+
 th,
 td {
     padding: 2px 7px;
@@ -96,8 +163,6 @@ hr {
     width: 15%;
     margin: 60px auto;   
 }
-
-
 
 .skill-row {
     display: flex;
@@ -162,6 +227,7 @@ hr {
 
 .get-in-touch {
     color: #EAF6F6;
+    padding-top: 15px;
 }
 
 .contact-me {
@@ -220,6 +286,11 @@ nav a {
 
 
 /* Page 2 */
+
+.project-list {
+    padding-top: 20px;
+}
+
 .project {
     display: flex;
     justify-content: center;
@@ -241,7 +312,7 @@ nav a {
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
     h1 {
         font-size: 65px;
     }
@@ -285,6 +356,38 @@ nav a {
         align-items: center;
         justify-content: center;
         gap: 150px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 60px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        margin-right: 45px;
+    }
+
+    h2 {
+        padding-top: 80px;
+    }
+
+    .nav-logo {
+        max-width: 50px;
+        max-height: 50px;
+        margin-left: 45px;
+    }
+
+    .container {
+        margin-top: 0;
     }
 
     /* Page 2 */
